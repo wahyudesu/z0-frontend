@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import React from "react";
+import { useT } from "@/context/locale-provider";
 
 type Avatar = {
   src?: string;
@@ -15,11 +16,13 @@ const defaultAvatars: Avatar[] = [
 
 export default function SocialProof({
   avatars = defaultAvatars,
-  peopleText = "Join 10K tech people",
+  peopleText,
 }: {
   avatars?: Avatar[];
   peopleText?: string;
 }) {
+  const t = useT();
+
   return (
     <div className="mt-8 flex items-center gap-4">
       <div className="flex -space-x-3">
@@ -42,7 +45,7 @@ export default function SocialProof({
           <Star className="h-4 w-4 text-yellow-400" />
         </div>
         <div className="text-sm font-medium text-foreground/90">
-          {peopleText}
+          {peopleText ?? t.socialProofJoinText}
         </div>
       </div>
     </div>

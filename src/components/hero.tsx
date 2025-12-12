@@ -1,12 +1,16 @@
+"use client";
+
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 import Link from "next/link";
 import SocialProof from "@/components/social-proof";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useT } from "@/context/locale-provider";
 import { cn } from "@/lib/utils";
 
 export default function Hero() {
+  const t = useT();
   return (
     <div className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
       <AnimatedGridPattern
@@ -29,12 +33,10 @@ export default function Hero() {
           </Link>
         </Badge>
         <h1 className="mt-6 font-semibold text-4xl tracking-tighter sm:text-5xl md:text-6xl md:leading-[1.2] lg:text-7xl">
-          Customized Shadcn UI Blocks & Components
+          {t.heroTitle}
         </h1>
         <p className="mt-6 text-foreground/80 md:text-lg">
-          Explore a collection of Shadcn UI blocks and components, ready to
-          preview and copy. Streamline your development workflow with
-          easy-to-implement examples.
+          {t.heroDescription}
         </p>
         <SocialProof />
         <div className="mt-12 flex items-center justify-center gap-4">

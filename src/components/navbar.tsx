@@ -3,9 +3,8 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { type ChangeEvent, useEffect, useState } from "react";
 import { Logo } from "@/components/logo";
-import { NavMenu } from "@/components/nav-menu";
+// removed NavMenu in favor of a simpler centered nav
 import { NavigationSheet } from "@/components/navigation-sheet";
-import { Button } from "@/components/ui/button";
 import { useLocale, useT } from "@/context/locale-provider";
 
 const Navbar = () => {
@@ -53,31 +52,60 @@ const Navbar = () => {
   return (
     <nav className="h-16 border-b bg-background">
       <div className="mx-auto flex h-full max-w-(--breakpoint-lg) items-center justify-between px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-8">
-          <Logo />
-
-          {/* Top-level links for product pages */}
-          <div className="hidden md:flex items-center gap-4">
-            <a className="text-sm font-medium hover:underline" href="/features">
-              {t.features}
-            </a>
-            <a
-              className="text-sm font-medium hover:underline"
-              href="/changelog"
-            >
-              {t.changelog}
-            </a>
+        <div className="flex items-center gap-8 w-full">
+          <div className="flex items-center gap-8">
+            <Logo />
           </div>
 
-          {/* Desktop Menu (secondary) */}
-          <NavMenu className="hidden md:block" />
+          {/* Centered nav links (desktop) */}
+          <div className="hidden md:flex flex-1 items-center justify-center">
+            <ul className="flex items-center gap-6">
+              {[
+                { label: "What's New", href: "#" },
+                { label: "Features", href: "/features" },
+                { label: "Changelog", href: "#" },
+              ].map((link) => {
+                const isActive = link.label === "Features";
+                return (
+                  <li className="relative" key={link.label}>
+                    <a
+                      className={`px-2 py-2 text-sm font-medium transition-colors ${
+                        isActive ? "text-foreground" : "text-muted-foreground"
+                      }`}
+                      href={link.href}
+                    >
+                      {link.label}
+                    </a>
+
+                    {/* caret/indicator under active item */}
+                    {isActive && (
+                      <span className="absolute left-1/2 top-full -translate-x-1/2 mt-2 block">
+                        <svg
+                          fill="none"
+                          height="8"
+                          viewBox="0 0 18 8"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9 8L0.669872 0H17.3301L9 8Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          <div className="flex items-center gap-4">
+            {/* placeholder to keep spacing on mobile */}
+          </div>
         </div>
 
         <div className="flex items-center gap-3">
-          <Button>
-            {t.getStarted} <ArrowUpRight />
-          </Button>
-
           {/* language selector */}
           <select
             aria-label="Select language"

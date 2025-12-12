@@ -1,93 +1,140 @@
 import {
-  BookCheck,
-  ChartPie,
-  FolderSync,
-  Goal,
+  ChevronDown,
+  Cloud,
+  Cpu,
+  Flashlight,
+  Key,
+  Layers,
+  Lock,
+  Moon,
+  Printer,
+  Smile,
+  Upload,
   Users,
   Zap,
 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Button } from "./ui/button";
 
-const features = [
+type FeatureItem = {
+  icon: React.ComponentType<any>;
+  title: string;
+  description: string;
+};
+
+const features: FeatureItem[] = [
   {
-    icon: Goal,
-    title: "Identify Opportunities",
-    description:
-      "Easily uncover untapped areas to explore and expand your reach effortlessly and effectively.",
+    icon: Lock,
+    title: "Private & Secure",
+    description: "We don't snoop and we don't sell your data",
   },
   {
-    icon: BookCheck,
-    title: "Build Authority",
-    description:
-      "Create valuable content that resonates, inspires trust, and positions you as an expert.",
+    icon: Smile,
+    title: "Fast Support",
+    description: "Need help? Chat with us quickly within the app",
   },
   {
-    icon: ChartPie,
-    title: "Instant Insights",
-    description:
-      "Gain immediate, actionable insights with a quick glance, enabling fast decision-making.",
+    icon: Upload,
+    title: "Import",
+    description: "Import your existing markdown notes",
   },
   {
-    icon: Users,
-    title: "Engage with Your Audience",
-    description:
-      "Boost audience engagement with interactive features like polls, quizzes, and forms.",
+    icon: Cpu,
+    title: "Extremely Reliable",
+    description: '"Help my notes app isn\'t working?!"',
   },
   {
-    icon: FolderSync,
-    title: "Automate Your Workflow",
-    description:
-      "Streamline your processes by automating repetitive tasks, saving time and reducing effort.",
+    icon: Layers,
+    title: "Thoughts Collection",
+    description: "Re-discover lost notes and expand on them",
   },
   {
-    icon: Zap,
-    title: "Accelerate Growth",
-    description:
-      "Supercharge your growth by implementing strategies that drive results quickly and efficiently.",
+    icon: Key,
+    title: "Keyboard Controls",
+    description: "Just start typing to create a new note",
   },
+  {
+    icon: Moon,
+    title: "Night Mode",
+    description: "Two dark themes for late-night thinkers",
+  },
+  {
+    icon: Printer,
+    title: "Print & Export",
+    description: "Generate a printable PDF from Markdown",
+  },
+];
+
+const bulbColors = [
+  "bg-rose-100 text-rose-600",
+  "bg-amber-100 text-amber-600",
+  "bg-emerald-100 text-emerald-600",
+  "bg-sky-100 text-sky-600",
+  "bg-pink-100 text-pink-600",
+  "bg-violet-100 text-violet-600",
+  "bg-indigo-100 text-indigo-600",
+  "bg-red-100 text-red-600",
+  "bg-orange-100 text-orange-600",
+  "bg-cyan-100 text-cyan-600",
+  "bg-yellow-100 text-yellow-600",
+  "bg-lime-100 text-lime-600",
 ];
 
 const Features = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <div className="w-full max-w-(--breakpoint-lg) px-6 py-12">
-        <h2 className="max-w-lg font-semibold text-4xl tracking-[-0.03em] md:text-5xl md:leading-14">
-          Boost Your Strategy with Smart Features
-        </h2>
-        <div className="mx-auto mt-6 grid w-full gap-12 md:mt-10 md:grid-cols-2">
-          <div>
-            <Accordion className="w-full" defaultValue="item-0" type="single">
-              {features.map(({ title, description, icon: Icon }, index) => (
-                <AccordionItem
-                  className="group/accordion-item data-[state=open]:border-primary data-[state=open]:border-b-2"
-                  key={index}
-                  value={`item-${index}`}
-                >
-                  <AccordionTrigger className="text-lg group-first/accordion-item:pt-0 [&>svg]:hidden">
-                    <div className="flex items-center gap-4">
-                      <Icon />
-                      {title}
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-[17px] text-muted-foreground leading-relaxed">
-                    {description}
-                    <div className="mt-6 mb-2 aspect-video w-full rounded-xl bg-muted md:hidden" />
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
+    <section className="py-20">
+      <div className="mx-auto max-w-4xl px-6 text-center">
+        <div className="flex items-center justify-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-violet-50 px-3 py-1 text-sm font-medium text-violet-600">
+            <Zap className="h-4 w-4" />
+            Highly Efficient
+          </span>
+        </div>
 
-          {/* Media */}
-          <div className="hidden h-full w-full rounded-xl bg-muted md:block" />
+        <h2 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight">
+          Built for Busy People
+        </h2>
+
+        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+          Don’t have much time on your hands? Supernotes takes care of lots of
+          things for you, so you can focus. No formatting, no downloads, no
+          loading screens. It just works on all your devices!
+        </p>
+
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {features.map((f, idx) => {
+            const Icon = f.icon as React.ComponentType<any>;
+            const bulb = bulbColors[idx % bulbColors.length];
+            return (
+              <div
+                className="rounded-2xl bg-accent p-5 transition-all duration-300 ease-in-out hover:shadow-lg hover:outline-1 backdrop-blur-sm hover:bg-white transform hover:-translate-y-1 text-left"
+                key={f.title}
+              >
+                <div className="flex flex-col items-start gap-4">
+                  <div
+                    className={`flex h-10 w-10 items-center justify-center rounded-full ${bulb}`}
+                  >
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-semibold">{f.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      {f.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-8">
+          <Button className="" variant="ghost">
+            View all 49 Features
+            <ChevronDown className="h-4 w-4" />
+          </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

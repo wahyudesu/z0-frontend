@@ -60,7 +60,7 @@ export default function Timeline() {
         {changelog
           .reverse()
           .map(({ title, description, date, version }, index) => (
-            <div key={index} className="group relative">
+            <div className="group relative" key={index}>
               {/* Content */}
               <div className="flex items-start">
                 <div className="mt-3 mr-5 flex flex-col gap-2 shrink-0 w-[75px] sm:w-[90px] text-end">
