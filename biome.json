@@ -1,0 +1,21 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+	"files": {
+		"ignoreUnknown": false,
+		"experimentalScannerIgnores": ["node_modules", ".next"],
+		"includes": [
+			"src/**/*.{js,jsx,ts,tsx,json,md,mdx,yml,yaml,html,css,scss,sass}",
+			"!**/node_modules/**/*",
+			"!**/.next/**",
+			"!**/dist/**",
+			"!**/out/**",
+			"!**/.vercel/**"
+		]
+	},
+	"linter": {
+		"enabled": false,
+		"rules": {
+			"recommended": true
+		}
+	}
+}
