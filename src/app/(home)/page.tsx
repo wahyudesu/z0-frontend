@@ -4,7 +4,7 @@ import FAQ1 from "./faq";
 
 import Features from "./feature";
 import { Hero1 } from "./hero";
-import {TechStack} from "./tech";
+import { TechStack } from "./tech";
 import { TestimonialsSection } from "./testimonials";
 
 export default function Home() {
@@ -14,8 +14,8 @@ export default function Home() {
 			<TechStack />
 			<Features />
 			<TestimonialsSection />
-			<FAQ1/>
-			<CTA1/>
+			<FAQ1 />
+			<CTA1 />
 		</div>
 	);
 }

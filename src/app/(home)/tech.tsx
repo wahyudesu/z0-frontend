@@ -1,7 +1,7 @@
 import { MoveRight, PhoneCall } from "lucide-react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 const techs = [
 	{ name: "Hono", src: "/hono.svg", width: 56, height: 56 },
