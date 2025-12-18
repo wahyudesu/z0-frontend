@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "motion/react";
+import Image from "next/image";
 // https://magicui.design/docs/components/grid-pattern
 import { GridPattern } from "@/components/ui/grid-pattern";
 

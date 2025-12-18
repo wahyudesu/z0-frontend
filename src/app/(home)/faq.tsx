@@ -59,7 +59,7 @@ const FAQ1 = () => {
 						<Accordion
 							type="single"
 							collapsible
-							className="mt-6 space-y-4"
+							className=" space-y-4"
 							defaultValue="question-0"
 						>
 							{faq.map(({ question, answer }, index) => (
@@ -68,8 +68,8 @@ const FAQ1 = () => {
 									value={`question-${index}`}
 									className={cn(
 										"rounded-xl px-4 py-1 transition-colors",
-										"bg-white",
-										"data-[state=open]:bg-blue-50 border border-blue-500",
+										"bg-white border-none",
+										"data-[state=open]:bg-blue-50",
 									)}
 								>
 									<AccordionPrimitive.Header className="flex">

@@ -1,6 +1,11 @@
 "use client";
 
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react";
+import {
+	CircleCheckIcon,
+	CircleHelpIcon,
+	CircleIcon,
+	Menu as MenuIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
@@ -15,6 +20,14 @@ import {
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import {
+	Sheet,
+	SheetContent,
+	SheetFooter,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger,
+} from "@/components/ui/sheet";
 import { dropdownMenus, simpleMenus } from "@/config/navbar";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -38,7 +51,7 @@ export function Navbar() {
 				</div>
 
 				{/* Navigation Menu - Centered */}
-				<NavigationMenu viewport={isMobile}>
+				<NavigationMenu viewport={isMobile} className="hidden md:block">
 					<NavigationMenuList className="flex-wrap">
 						{dropdownMenus.map((menu, index) => (
 							<NavigationMenuItem key={index}>
@@ -99,14 +112,85 @@ export function Navbar() {
 								</NavigationMenuContent>
 							</NavigationMenuItem>
 						))}
-
 						<NavigationMenuItem>
-						<NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-							<Link href="/docs">Resources</Link>
-						</NavigationMenuLink>
+							<NavigationMenuLink
+								asChild
+								className={navigationMenuTriggerStyle()}
+							>
+								<Link href="/docs">Pricing</Link>
+							</NavigationMenuLink>
+						</NavigationMenuItem>
+						<NavigationMenuItem>
+							<NavigationMenuLink
+								asChild
+								className={navigationMenuTriggerStyle()}
+							>
+								<Link href="/docs">Resources</Link>
+							</NavigationMenuLink>
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
+
+				{/* Mobile sheet trigger */}
+				<div className="md:hidden">
+					<Sheet>
+						<SheetTrigger asChild>
+							<Button variant="ghost" size="icon" aria-label="Open menu">
+								<MenuIcon className="h-5 w-5" />
+							</Button>
+						</SheetTrigger>
+
+						<SheetContent side="left">
+							<SheetHeader>
+								<SheetTitle>Menu</SheetTitle>
+							</SheetHeader>
+							<div className="p-4 space-y-4">
+								{dropdownMenus.map((menu, idx) => (
+									<div key={idx}>
+										<div className="font-medium mb-1">{menu.trigger}</div>
+										{menu.items.map((it, i) => (
+											<Link
+												key={i}
+												href={it.href || "#"}
+												className="block py-1 text-sm text-muted-foreground"
+											>
+												{it.title}
+											</Link>
+										))}
+									</div>
+								))}
+
+								{simpleMenus.map((menu, idx) => (
+									<div key={idx}>
+										<div className="font-medium mb-1">{menu.trigger}</div>
+										{menu.items.map((it, i) => (
+											<Link
+												key={i}
+												href={it.href || "#"}
+												className="block py-1 text-sm text-muted-foreground"
+											>
+												{it.title}
+											</Link>
+										))}
+									</div>
+								))}
+							</div>
+							<SheetFooter>
+								<div className="flex items-center justify-center">
+									<Button variant="outline" size="icon" asChild>
+										<Link
+											href="https://github.com"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<FaGithub className="h-4 w-4" />
+										</Link>
+									</Button>
+								</div>
+							</SheetFooter>
+						</SheetContent>
+					</Sheet>
+				</div>
 
 				{/* Resources + GitHub Buttons */}
 				<div className="flex items-center gap-2">

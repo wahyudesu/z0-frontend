@@ -2,39 +2,30 @@
 
 import { GripVerticalIcon } from "lucide-react";
 import * as React from "react";
-import { PanelGroup, Panel, PanelResizeHandle } from "react-resizable-panels";
+import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
 
 import { cn } from "@/lib/utils";
 
-function ResizablePanelGroup({
-	className,
-	...props
-}: any) {
+function ResizablePanelGroup({ className, ...props }: any) {
 	return (
 		<PanelGroup
-				data-slot="resizable-panel-group"
-				className={cn(
-					"flex h-full w-full data-[panel-group-direction=vertical]:flex-col",
-					className,
-				)}
-				{...props}
-			/>
+			data-slot="resizable-panel-group"
+			className={cn(
+				"flex h-full w-full data-[panel-group-direction=vertical]:flex-col",
+				className,
+			)}
+			{...props}
+		/>
 	);
 }
 
-function ResizablePanel({
-	...props
-}: any) {
+function ResizablePanel({ ...props }: any) {
 	return <Panel data-slot="resizable-panel" {...props} />;
 }
 
-function ResizableHandle({
-	withHandle,
-	className,
-	...props
-}: any) {
+function ResizableHandle({ withHandle, className, ...props }: any) {
 	return (
-	<PanelResizeHandle
+		<PanelResizeHandle
 			data-slot="resizable-handle"
 			className={cn(
 				"bg-border focus-visible:ring-ring relative flex w-px items-center justify-center after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:-translate-x-1/2 focus-visible:ring-1 focus-visible:ring-offset-1 focus-visible:outline-hidden data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full data-[panel-group-direction=vertical]:after:left-0 data-[panel-group-direction=vertical]:after:h-1 data-[panel-group-direction=vertical]:after:w-full data-[panel-group-direction=vertical]:after:translate-x-0 data-[panel-group-direction=vertical]:after:-translate-y-1/2 [&[data-panel-group-direction=vertical]>div]:rotate-90",

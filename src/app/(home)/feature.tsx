@@ -26,44 +26,44 @@ type FeatureItem = {
 
 const features: FeatureItem[] = [
 	{
-		icon: Lock,
-		title: "Private & Secure",
-		description: "We don't snoop and we don't sell your data",
+		icon: Users,
+		title: "Tagall",
+		description: "mention semua member dalam satu perintah",
+	},
+	{
+		icon: Flashlight,
+		title: "Toxic Detection",
+		description: "mendeteksi kata kasar untuk menjaga kenyamanan grup",
 	},
 	{
 		icon: Smile,
-		title: "Fast Support",
-		description: "Need help? Chat with us quickly within the app",
+		title: "Welcoming Message",
+		description: "pesan sambutan otomatis untuk member baru",
+	},
+	{
+		icon: Lock,
+		title: "Admin Control",
+		description: "membuka dan menutup chat grup dengan mudah",
 	},
 	{
 		icon: Upload,
-		title: "Import",
-		description: "Import your existing markdown notes",
+		title: "Ads Detection",
+		description: "mendeteksi dan memblokir link promosi",
+	},
+	{
+		icon: Smile,
+		title: "Pantun",
+		description: "membuat pantun otomatis untuk hiburan",
 	},
 	{
 		icon: Cpu,
-		title: "Extremely Reliable",
-		description: '"Help my notes app isn\'t working?!"',
+		title: "AI Web Search",
+		description: "asisten pintar untuk menjawab dan membantu pengguna",
 	},
 	{
-		icon: Layers,
-		title: "Thoughts Collection",
-		description: "Re-discover lost notes and expand on them",
-	},
-	{
-		icon: Key,
-		title: "Keyboard Controls",
-		description: "Just start typing to create a new note",
-	},
-	{
-		icon: Moon,
-		title: "Night Mode",
-		description: "Two dark themes for late-night thinkers",
-	},
-	{
-		icon: Printer,
-		title: "Print & Export",
-		description: "Generate a printable PDF from Markdown",
+		icon: Zap,
+		title: "Fakta Unik",
+		description: "menyajikan fakta menarik untuk meningkatkan interaksi grup",
 	},
 ];
 
@@ -94,13 +94,13 @@ const Features = () => {
 				</div>
 
 				<h2 className="mt-6 text-4xl font-extrabold leading-tight tracking-tighter">
-					Built for Busy People
+					Built better community
 				</h2>
 
 				<p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-					Don’t have much time on your hands? Supernotes takes care of lots of
-					things for you, so you can focus. No formatting, no downloads, no
-					loading screens. It just works on all your devices!
+					Buat grup wa mu terasa lebih ramai, lebih hidup dan lebih interaktif
+					dengan chatbot whatsapp yang memiliki segudang fitur keren yang kamu
+					bisa coba gratis
 				</p>
 
 				<div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

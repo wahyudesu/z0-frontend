@@ -1,30 +1,33 @@
 import { MoveRight, PhoneCall } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { FaGithub } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
 export const CTA1 = () => (
 	<div className="w-full py-16 lg:py-32">
 		<div className="container mx-auto">
 			<div className="flex flex-col text-center bg-muted rounded-md p-4 lg:p-14 gap-8 items-center">
-				<div>
-					<Badge>Get started</Badge>
-				</div>
 				<div className="flex flex-col gap-2">
 					<h3 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular">
-						Try our platform today!
+						Coba gratis sekarang
 					</h3>
 					<p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl">
-						Managing a small business today is already tough. Avoid further
-						complications by ditching outdated, tedious trade methods. Our goal
-						is to streamline SMB trade, making it easier and faster than ever.
+						Grup wa terasa sepi dan membosankan? Dengan z0 kamu bisa buat grup
+						WA mu terasa lebih ramai, lebih hidup dan lebih interaktif
 					</p>
 				</div>
 				<div className="flex flex-row gap-4">
-					<Button className="gap-4" variant="outline">
-						Jump on a call <PhoneCall className="w-4 h-4" />
+					<Button
+						size="lg"
+						className="gap-4 motion-preset-pop delay-1200"
+						variant="outline"
+					>
+						Self-hosted <FaGithub className="w-4 h-4" />
 					</Button>
-					<Button className="gap-4">
-						Sign up here <MoveRight className="w-4 h-4" />
+					<Button
+						size="lg"
+						className="gap-4 motion-preset-pop delay-1500 bg-blue-500 hover:bg-blue-600"
+					>
+						Tambahkan gratis di grup mu <MoveRight className="w-4 h-4" />
 					</Button>
 				</div>
 			</div>
