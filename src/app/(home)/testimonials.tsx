@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 // https://magicui.design/docs/components/grid-pattern
 import { GridPattern } from "@/components/ui/grid-pattern";
@@ -92,9 +93,9 @@ export function TestimonialsSection() {
 		<section className="relative w-full py-8 lg:py-24">
 			<div className="mx-auto max-w-4xl px-6 space-y-8">
 				<div className="flex flex-col gap-2">
-					<h1 className="text-3xl tracking-tighter md:text-4xl lg:text-5xl font-extrabold">
+					<h2 className="text-3xl tracking-tighter md:text-4xl lg:text-5xl font-extrabold">
 						Real Results, Real Voices
-					</h1>
+					</h2>
 					<p className="text-muted-foreground text-sm md:text-base lg:text-lg">
 						See how businesses are thriving with our ERP — real stories, real
 						impact, real growth.
@@ -125,13 +126,13 @@ export function TestimonialsSection() {
 								/>
 							</div>
 							<div className="flex items-start gap-x-3">
-								<img
+								<Image
 									alt={name}
 									className="rounded-full"
-									height={36}
-									loading="lazy"
 									src={image}
 									width={36}
+									height={36}
+									loading="lazy"
 								/>
 								<div>
 									<div className="-mt-0.5 -space-y-0.5">

@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Albert_Sans, Work_Sans } from "next/font/google";
 import { StickyFooter } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 
 import "./globals.css";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+const workSans = Work_Sans({
+	variable: "--font-sans",
 	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+const albertSans = Albert_Sans({
+	variable: "--font-mono",
 	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +33,7 @@ export default function RootLayout({
 				<link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${workSans.variable} ${albertSans.variable} antialiased`}
 			>
 				<Navbar />
 				{children}
