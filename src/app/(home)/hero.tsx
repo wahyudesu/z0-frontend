@@ -7,7 +7,7 @@ export const Hero1 = () => (
 		<div className="mx-auto max-w-4xl px-6">
 			<div className="flex gap-6 py-16 lg:py-32 items-center justify-center flex-col">
 				<div>
-					<Button variant="secondary" size="sm" className="animate-bounce gap-4">
+					<Button variant="secondary" size="sm" className=" gap-4">
 						Baru saja rilis <MoveRight className="w-4 h-4" />
 					</Button>
 				</div>

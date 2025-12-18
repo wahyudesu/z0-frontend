@@ -39,7 +39,7 @@ const faq = [
 const FAQ1 = () => {
 	return (
 		<div className="min-h-screen flex items-center justify-center px-6 py-16 lg:py-24">
-			<div className="w-full max-w-4xl">
+			<div className="w-full max-w-4xl py-0">
 				<div className="grid gap-8 md:grid-cols-2 items-start">
 					<div>
 						<h2 className="text-4xl leading-[1.15]! font-semibold tracking-[-0.03em]">
@@ -48,7 +48,7 @@ const FAQ1 = () => {
 						<p className="mt-3 text-lg text-muted-foreground">
 							Quick answers to common questions about our products and services.
 						</p>
-						<div className="">
+						<div className="py-4">
 							<Button className="gap-4" variant="outline">
 								Any questions? Reach out <PhoneCall className="w-4 h-4" />
 							</Button>

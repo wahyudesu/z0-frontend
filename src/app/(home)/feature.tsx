@@ -84,7 +84,7 @@ const bulbColors = [
 
 const Features = () => {
 	return (
-		<section className="py-16 lg:py-32">
+		<section className="py-16 lg:py-24">
 			<div className="mx-auto max-w-4xl px-6 text-center">
 				<div className="flex items-center justify-center">
 					<span className="inline-flex items-center gap-2 rounded-full bg-violet-50 px-3 py-1 text-sm font-medium text-violet-600">

@@ -99,11 +99,17 @@ export function Navbar() {
 								</NavigationMenuContent>
 							</NavigationMenuItem>
 						))}
+
+						<NavigationMenuItem>
+						<NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+							<Link href="/docs">Resources</Link>
+						</NavigationMenuLink>
+						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
 
-				{/* GitHub Button */}
-				<div>
+				{/* Resources + GitHub Buttons */}
+				<div className="flex items-center gap-2">
 					<Button variant="outline" size="icon" asChild>
 						<Link
 							href="https://github.com"
