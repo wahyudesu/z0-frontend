@@ -1,16 +1,18 @@
 // import { FAQ1 } from "./faq";
-import { CTA1 } from "./cta";
-import FAQ1 from "./faq";
+import { CTA1 } from "./component/cta";
+import FAQ1 from "./component/faq";
 
-import Features from "./feature";
-import { Hero1 } from "./hero";
-import Pricing from "./pricing";
-import { TechStack } from "./tech";
-import { TestimonialsSection } from "./testimonials";
+import Features from "./component/feature";
+import { Hero1 } from "./component/hero";
+import Pricing from "./component/pricing";
+import { TechStack } from "./component/tech";
+import { TestimonialsSection } from "./component/testimonials";
+import Navbar from "@/app/(home)/navbar/navbar";
 
 export default function Home() {
 	return (
 		<div>
+			<Navbar />
 			<Hero1 />
 			<TechStack />
 			<Features />

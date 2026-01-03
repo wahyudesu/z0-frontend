@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Albert_Sans, Work_Sans } from "next/font/google";
-import { StickyFooter } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
 
 import "./globals.css";
 
@@ -35,9 +33,7 @@ export default function RootLayout({
 			<body
 				className={`${workSans.variable} ${albertSans.variable} antialiased`}
 			>
-				<Navbar />
 				{children}
-				<StickyFooter />
 			</body>
 		</html>
 	);
