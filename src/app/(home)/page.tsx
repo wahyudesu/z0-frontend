@@ -7,16 +7,16 @@ import { Hero1 } from "./component/hero";
 import Pricing from "./component/pricing";
 import { TechStack } from "./component/tech";
 import { TestimonialsSection } from "./component/testimonials";
-import Navbar from "@/app/(home)/navbar/navbar";
+// import Navbar from "@/app/(home)/navbar/navbar";
 
 export default function Home() {
 	return (
 		<div>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Hero1 />
-			<TechStack />
+			{/* <TechStack /> */}
 			<Features />
-			<TestimonialsSection />
+			{/* <TestimonialsSection /> */}
 			<FAQ1 />
 			<Pricing />
 			<CTA1 />

@@ -39,9 +39,9 @@ export const CTA1 = () => (
 		<div className="container mx-auto max-w-4xl pb-6">
 			<p className="mb-2">Created by zapzipped. <a href="mailto:team@zapzipped.com" className="underline">team@zapzipped.com</a></p>
 			<div className="flex justify-center gap-4">
-				<a href="/privacy-policy.html" className="underline">Privacy Policy</a>
+				<a href="/privacy" className="underline">Privacy Policy</a>
 				<span className="text-muted-foreground">|</span>
-				<a href="/terms.html" className="underline">Terms of Use</a>
+				<a href="/terms" className="underline">Terms of Use</a>
 			</div>
 		</div>
 		</footer>

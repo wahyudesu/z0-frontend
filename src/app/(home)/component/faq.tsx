@@ -38,7 +38,7 @@ const faq = [
 
 const FAQ1 = () => {
 	return (
-		<div className="min-h-screen flex items-center justify-center px-6 py-16 lg:py-24">
+		<div className="max-h-screen flex items-center justify-center px-6 py-16 lg:py-24">
 			<div className="w-full max-w-4xl py-0">
 				<div className="grid gap-8 md:grid-cols-2 items-start">
 					<div>

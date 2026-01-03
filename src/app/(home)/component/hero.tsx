@@ -1,7 +1,7 @@
-import { MoveRight, PhoneCall } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { MoveRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TextAnimate } from "@/components/ui/text-animate";
+import Link from "next/link";
 
 export const Hero1 = () => (
 	<div className="w-full">
@@ -23,31 +23,30 @@ export const Hero1 = () => (
 							</TextAnimate>
 						</h1>
 					</h1>
-					<TextAnimate
-						animation="blurInUp"
-						by="character"
-						className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center"
-						once
-						delay={0.7}
-					>
-						Tambahkan fitur-fitur yang diperlukan untuk mengelola grup WhatsApp,
-						mulai dari fitur tagall, deteksi kata kasar dan link promosi, hingga
-					</TextAnimate>
 				</div>
-				<div className="flex flex-row gap-3">
-					<Button
-						size="lg"
-						className="gap-4 motion-preset-pop delay-1200"
-						variant="outline"
-					>
-						Self-hosted <FaGithub className="w-4 h-4" />
-					</Button>
+				<TextAnimate
+					animation="blurInUp"
+					by="character"
+					className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center"
+					once
+					delay={0.7}
+				>
+					Tambahkan fitur-fitur yang diperlukan untuk mengelola grup WhatsApp,
+					mulai dari fitur tagall, deteksi kata kasar dan link promosi, hingga
+				</TextAnimate>
+				<div className="flex flex-col items-center gap-4">
 					<Button
 						size="lg"
 						className="gap-4 motion-preset-pop delay-1500 bg-blue-500 hover:bg-blue-600"
 					>
-						Tambahkan gratis di grup mu <MoveRight className="w-4 h-4" />
+						Tambahkan gratis di grup WA <MoveRight className="w-4 h-4" />
 					</Button>
+					<div className="text-center text-sm text-muted-foreground">
+						We do NOT store your data.{" "}
+						<Link href="/terms" className="underline hover:text-foreground">
+							See the Terms of Use
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
