@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Albert_Sans, Work_Sans } from "next/font/google";
-import Navbar from "@/app/(home)/navbar/navbar";
+import Navbar from "@/app/(home)/_navbar/navbar";
 
 import "./globals.css";
 

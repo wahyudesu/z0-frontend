@@ -8,7 +8,7 @@ import {
 } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
-export function Icon({ className }: { className?: string }) {
+export default function Icon({ className }: { className?: string }) {
   // Eye logic
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
   const [hasMoved, setHasMoved] = useState(false);

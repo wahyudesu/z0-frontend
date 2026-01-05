@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Icon } from "./icon";
+import Icon from "./icon";
 
 export default function Logo({
   classNameIcon,
