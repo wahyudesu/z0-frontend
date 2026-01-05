@@ -10,29 +10,24 @@ import { cn } from "@/lib/utils";
 
 const faq = [
 	{
-		question: "What is your return policy?",
+		question: "Apakah chatbot ini benar-benar gratis?",
 		answer:
-			"You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+			"Ya. Saat ini chatbot bisa digunakan gratis untuk mencoba fitur-fitur yang tersedia. Fitur baru akan ditambahkan secara bertahap.",
 	},
 	{
-		question: "How do I track my order?",
+		question: "Apakah saya bisa meng-host chatbot ini sendiri?",
 		answer:
-			"Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+			"Ya. Chatbot ini bersifat open source dan dibangun di atas WAHA. Kamu bisa meng-host sendiri dengan menyesuaikan environment variable WAHA yang tersedia.",
 	},
 	{
-		question: "Do you ship internationally?",
+		question: "Apakah fitur chatbot bisa dikustom?",
 		answer:
-			"Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+			"Bisa. Kamu dapat mengajukan request fitur, dan kami akan mempertimbangkannya untuk ditambahkan.",
 	},
 	{
-		question: "What payment methods do you accept?",
+		question: "Apakah chatbot ini bisa digunakan untuk bisnis?",
 		answer:
-			"We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
-	},
-	{
-		question: "What if I receive a damaged item?",
-		answer:
-			"Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+			"Saat ini chatbot difokuskan untuk interaksi di grup WhatsApp, bukan untuk chat pribadi. Cocok untuk komunitas atau grup interaktif.",
 	},
 ];
 
@@ -45,14 +40,14 @@ const FAQ1 = () => {
 						<h2 className="text-4xl leading-[1.15]! font-semibold tracking-[-0.03em]">
 							Frequently Asked Questions
 						</h2>
-						<p className="mt-3 text-lg text-muted-foreground">
+						{/* <p className="mt-3 text-lg text-muted-foreground">
 							Quick answers to common questions about our products and services.
-						</p>
-						<div className="py-4">
+						</p> */}
+						{/* <div className="py-4">
 							<Button className="gap-4" variant="outline">
 								Any questions? Reach out <PhoneCall className="w-4 h-4" />
 							</Button>
-						</div>
+						</div> */}
 					</div>
 
 					<div>
@@ -75,7 +70,7 @@ const FAQ1 = () => {
 									<AccordionPrimitive.Header className="flex">
 										<AccordionPrimitive.Trigger
 											className={cn(
-												"flex flex-1 items-center justify-between pt-4 pb-3 text-lg font-semibold tracking-tight",
+												"flex flex-1 items-start justify-between pt-4 pb-3 text-left text-lg font-semibold tracking-tight",
 												"[&[data-state=open]>svg]:rotate-45",
 											)}
 										>

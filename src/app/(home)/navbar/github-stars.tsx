@@ -20,8 +20,8 @@ type GitHubData = {
 };
 
 export function GithubStars({
-  owner = "educlopez",
-  repo = "smoothui",
+  owner = "wahyudesu",
+  repo = "wawww-project",
   className,
   showForks = false,
 }: GithubInfoProps) {
@@ -58,7 +58,7 @@ export function GithubStars({
   return (
     <Link
       className={cn(
-        "flex items-center gap-2 font-medium text-sm transition-colors hover:text-brand",
+        "flex items-center gap-2 font-medium text-sm transition-colors rounded-md px-2 py-1 hover:bg-neutral-800/50 hover:text-brand",
         className
       )}
       href={githubUrl}

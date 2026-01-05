@@ -7,7 +7,7 @@ export const CTA1 = () => (
 	<>
 		<div className="w-full py-16 lg:py-32">
 		<div className="container mx-auto max-w-4xl">
-			<div className="flex flex-col text-center bg-muted rounded-2xl p-4 lg:p-14 gap-8 items-center">
+			<div className="flex flex-col text-center bg-yellow-100 rounded-2xl p-4 lg:p-14 gap-8 items-center">
 				<div className="flex flex-col gap-2">
 					<h3 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular">
 						Coba gratis sekarang

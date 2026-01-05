@@ -1,8 +1,5 @@
 .navbar-menu {
-	position: fixed;
-	top: 0.75rem;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
 	z-index: 100;
 	display: flex;
 	width: 100%;
@@ -360,10 +357,7 @@
 
 /* Mobile Navbar Styles */
 .mobile-navbar {
-	position: fixed;
-	top: 0.75rem;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
 	z-index: 100;
 	width: 100%;
 	max-width: calc(100vw - 2rem);

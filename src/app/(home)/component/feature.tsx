@@ -86,13 +86,6 @@ const Features = () => {
 	return (
 		<section className="py-16 lg:py-24">
 			<div className="mx-auto max-w-4xl px-6 text-center">
-				<div className="flex items-center justify-center">
-					<span className="inline-flex items-center gap-2 rounded-full bg-violet-50 px-3 py-1 text-sm font-medium text-violet-600">
-						<Zap className="h-4 w-4" />
-						Highly Efficient
-					</span>
-				</div>
-
 				<h2 className="mt-6 text-4xl font-extrabold leading-tight tracking-tighter">
 					Built better community
 				</h2>
@@ -109,7 +102,7 @@ const Features = () => {
 						const bulb = bulbColors[idx % bulbColors.length];
 						return (
 							<motion.div
-								className="cursor-default rounded-2xl bg-accent p-5 transition-all duration-300 ease-in-out hover:shadow-lg hover:outline-1 backdrop-blur-sm hover:bg-white transform hover:-translate-y-1 text-left"
+								className="cursor-default rounded-2xl bg-slate-50 p-5 transition-all duration-300 ease-in-out hover:shadow-lg hover:outline-1 backdrop-blur-sm hover:bg-white transform hover:-translate-y-1 text-left"
 								initial={{ opacity: 0, y: 20 }}
 								key={f.title}
 								transition={{ delay: 0.1 * idx, duration: 0.5 }}
