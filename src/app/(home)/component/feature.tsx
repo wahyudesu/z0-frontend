@@ -84,7 +84,7 @@ const bulbColors = [
 
 const Features = () => {
 	return (
-		<section className="py-16 lg:py-24">
+		<section className="pb-8 lg:pb-16">
 			<div className="mx-auto max-w-4xl px-6 text-center">
 				<h2 className="mt-6 text-4xl font-extrabold leading-tight tracking-tighter">
 					Built better community

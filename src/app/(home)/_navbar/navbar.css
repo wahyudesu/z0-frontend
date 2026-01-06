@@ -4,8 +4,12 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	max-width: 56rem; /* <-- GANTI ANGKA INI BUAR LEBIH KECIL/LEBIH BESAR */
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .menu-list {
@@ -14,8 +18,6 @@
 	display: none;
 	list-style: none;
 	justify-content: center;
-	border-radius: 9999px;
-	border: 1px solid oklch(0.922 0 0);
 	padding: 0.25rem;
 }
 
@@ -117,17 +119,17 @@
 /* Enhanced submenu styles */
 .enhanced-submenu {
 	display: flex;
-	min-height: 300px;
-	min-width: 600px;
+	min-height: 240px;
+	min-width: 480px;
 }
 
 .submenu-nav {
 	display: flex;
-	min-width: 280px;
+	min-width: 220px;
 	flex: 1;
 	flex-direction: column;
-	gap: 1rem;
-	padding: 1.5rem;
+	gap: 0.75rem;
+	padding: 1rem;
 }
 
 .submenu-header {
@@ -156,9 +158,9 @@
 	border-left: 1px solid oklch(0.922 0 0);
 	display: flex;
 	flex: 1;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	padding: 1.5rem;
+	padding: 1rem;
 }
 
 /* Enhanced list item styles */
@@ -184,7 +186,6 @@
 
 .enhanced-list-item-icon {
 	background-color: oklch(0.97 0 0);
-	color: oklch(0.556 0 0);
 	display: flex;
 	height: 2rem;
 	width: 2rem;
@@ -427,6 +428,12 @@
 
 .mobile-navbar-link:hover {
 	background-color: oklch(0.97 0 0);
+}
+
+.mobile-navbar-link {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
 }
 
 .mobile-navbar-footer {

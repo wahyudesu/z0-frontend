@@ -13,7 +13,7 @@ export const CTA1 = () => (
 						Coba gratis sekarang
 					</h3>
 					<p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl">
-						Grup wa terasa sepi dan membosankan? Dengan z0 kamu bisa buat grup
+						Grup wa terasa sepi dan membosankan? Dengan kamu bisa buat grup
 						WA mu terasa lebih ramai, lebih hidup dan lebih interaktif
 					</p>
 				</div>

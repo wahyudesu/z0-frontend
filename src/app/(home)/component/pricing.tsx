@@ -4,33 +4,32 @@ import { Card } from "@/components/ui/card";
 
 const tiers = [
 	{
-		name: "Hobby",
-		id: "tier-hobby",
-		href: "#",
-		priceMonthly: "$29",
-		description:
-			"The perfect plan if you're just getting started with our product.",
+		name: "Free",
+		id: "tier-free",
+		href: "https://wa.me/6281234567890",
+		priceMonthly: "Gratis",
+		description: "Fitur dasar untuk grup WA kecil",
 		features: [
-			"25 products",
-			"Up to 10,000 subscribers",
-			"Advanced analytics",
-			"24-hour support response time",
+			"Tagall (max 100 member)",
+			"Toxic Detection",
+			"Welcoming Message",
+			"Admin Control",
 		],
 		featured: false,
 	},
 	{
-		name: "Enterprise",
-		id: "tier-enterprise",
+		name: "Pro",
+		id: "tier-pro",
 		href: "#",
-		priceMonthly: "$99",
-		description: "Dedicated support and infrastructure for your company.",
+		priceMonthly: "Coming Soon",
+		description: "Semua fitur tanpa batas untuk grup aktif",
 		features: [
-			"Unlimited products",
-			"Unlimited subscribers",
-			"Advanced analytics",
-			"Dedicated support representative",
-			"Marketing automations",
-			"Custom integrations",
+			"Tagall (unlimited member)",
+			"Toxic Detection (custom kata)",
+			"Welcoming Message (custom)",
+			"Admin Control",
+			"Ads Detection",
+			"Pantun Generator",
 		],
 		featured: true,
 	},
@@ -59,60 +58,40 @@ export default function Example() {
 				</p>
 
 				<h2 className="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tighter">
-					Choose the right plan for you
+					Pilih paket yang sesuai
 				</h2>
 
 				<p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-					Choose an affordable plan that’s packed with the best features for
-					engaging your audience, creating customer loyalty, and driving sales.
+					Dapatkan semua fitur keren untuk grup WhatsApp kamu. Mulai gratis,
+					upgrade kapan saja untuk fitur lengkap.
 				</p>
 			</div>
 
 			<div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-8 px-6 md:grid-cols-2 lg:grid-cols-2 items-start">
-				{/* Left card - Starter / Free (visual match) */}
+				{/* Left card - Free */}
 				<div className="relative rounded-3xl p-6 sm:p-8 bg-white shadow">
 					<div className="flex items-start gap-6">
 						<div className="flex-1">
 							<p className="text-sm font-semibold text-blue-600">Starter</p>
 							<h3 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900">
-								Free
+								{tiers[0].priceMonthly}
 							</h3>
 							<p className="mt-2 text-sm text-muted-foreground">
-								All you need to get started...
+								{tiers[0].description}
 							</p>
 						</div>
 					</div>
 
 					<ul role="list" className="mt-6 space-y-4">
-						{/* Feature list styled to match image: pill + optional caption */}
-
-						<li>
-							<div className="flex items-start gap-3">
-								<span className="text-sm font-medium">Fast Sync</span>
-							</div>
-							<p className="mt-1 text-xs text-muted-foreground">
-								Your notes always up-to-date on all devices
-							</p>
-						</li>
-
-						<li>
-							<div className="flex items-start gap-3">
-								<span className="text-sm font-medium">Offline</span>
-							</div>
-							<p className="mt-1 text-xs text-muted-foreground">
-								Create & edit all notes without internet
-							</p>
-						</li>
-
-						<li>
-							<div className="flex items-start gap-3">
-								<span className="text-sm font-medium">Heatmap Calendar</span>
-							</div>
-							<p className="mt-1 text-xs text-muted-foreground">
-								Track thoughts, and assign them to days
-							</p>
-						</li>
+						{tiers[0].features.map((feature) => (
+							<li key={feature}>
+								<div className="flex items-start gap-3">
+									<span className="text-sm font-medium">{feature}</span>
+								</div>
+							</li>
+						))}
 					</ul>
+
 					<Card className="px-1 pt-1 pb-4 rounded-3xl my-4 bg-blue-200 gap-4">
 						<Button
 							variant="outline"
@@ -121,19 +100,16 @@ export default function Example() {
 							Mulai Gratis
 						</Button>
 						<p className="text-xs text-black text-center font-medium">
-							Track thoughts, and assign them to days
-						</p>
-						<p className="text-xs text-muted-foreground text-center">
-							Track thoughts, and assign them to days
+							Chat untuk daftarkan grupmu
 						</p>
 					</Card>
 				</div>
 
-				{/* Right card - Enterprise (featured) */}
+				{/* Right card - Pro (featured) */}
 				<div className="relative rounded-3xl p-8 sm:p-10 bg-linear-to-br from-green-50 to-green-100 ring-1 ring-green-200 shadow-lg">
 					<div className="absolute -right-3 -top-3 rotate-6 transform">
-						<div className="rounded-full bg-emerald-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
-							25% Off
+						<div className="rounded-full bg-amber-500 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+							Coming Soon
 						</div>
 					</div>
 
@@ -152,13 +128,13 @@ export default function Example() {
 
 					<div className="mt-6 flex items-baseline gap-x-3">
 						<span className="text-4xl font-extrabold tracking-tight text-emerald-700">
-							$8.02<span className="text-base font-medium">*</span>
+							{tiers[1].priceMonthly}
+							<span className="text-base font-medium">/bulan</span>
 						</span>
-						<span className="text-sm text-muted-foreground">/month</span>
 					</div>
 
-					<p className="mt-2 text-sm text-muted-foreground">
-						Everything in Starter and more...
+					<p className="mt-2 text-xl text-muted-foreground">
+						Semua fitur Starter + lebih banyak
 					</p>
 
 					<ul role="list" className="mt-6 space-y-3">
@@ -177,18 +153,16 @@ export default function Example() {
 						))}
 					</ul>
 
-					<Card className="px-1 pt-1 pb-4 rounded-3xl my-4 bg-green-200 gap-4 ">
+					<Card className="px-1 pt-1 pb-4 rounded-3xl my-4 bg-amber-100 gap-4 ">
 						<Button
 							variant="outline"
-							className="rounded-2xl py-6 shadow-green-700 shadow-2xl cursor-pointer transition-all duration-200 hover:shadow-xl hover:mx-2 hover:my-1"
+							disabled
+							className="rounded-2xl py-6 cursor-not-allowed opacity-50"
 						>
-							Mulai Gratis
+							Coming Soon
 						</Button>
 						<p className="text-xs text-black text-center font-medium">
-							Track thoughts, and assign them to days
-						</p>
-						<p className="text-xs text-muted-foreground text-center">
-							Track thoughts, and assign them to days
+							Notify me when ready
 						</p>
 					</Card>
 				</div>

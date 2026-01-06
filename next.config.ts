@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
 	images: {
 		// allow remote avatars used in testimonials
-		domains: ["randomuser.me"],
+		domains: ["randomuser.me", "images.unsplash.com"],
 	},
 };
 

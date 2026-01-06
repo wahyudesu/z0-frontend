@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { cn } from "@/lib/utils";
-import Icon from "./icon";
 
 export default function Logo({
   classNameIcon,
@@ -12,14 +12,20 @@ export default function Logo({
 }) {
   return (
     <>
-      <Icon className={cn("h-6 w-auto cursor-grabbing", classNameIcon)} />
+      <Image
+        src="/logo.svg"
+        alt="Logo"
+        width={32}
+        height={32}
+        className={cn("h-6 w-auto", classNameIcon)}
+      />
       <span
         className={cn(
-          "mt-0.5 select-none text-center font-medium font-title text-foreground text-xl transition",
+          "mt-0.5 select-none text-center font-medium font-title text-foreground text-md transition",
           className
         )}
       >
-        Smooth<span className="text-brand">UI</span>
+        WAWWW.CHAT
       </span>
     </>
   );

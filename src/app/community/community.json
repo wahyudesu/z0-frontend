@@ -1,0 +1,254 @@
+{
+	"categories": [
+		{
+			"slug": "edukasi",
+			"title": "Edukasi",
+			"icon": "GraduationCap",
+			"count": "2.5 rb Komunitas",
+			"description": "Komunitas belajar, kursus online, diskusi pelajaran, dan komunitas pendidikan.",
+			"banner": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=80"
+		},
+		{
+			"slug": "bisnis",
+			"title": "Bisnis",
+			"icon": "Briefcase",
+			"count": "1.8 rb Komunitas",
+			"description": "Komunitas entrepreneurship, networking bisnis, dan peluang usaha.",
+			"banner": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80"
+		},
+		{
+			"slug": "teknologi",
+			"title": "Teknologi",
+			"icon": "Users",
+			"count": "3.2 rb Komunitas",
+			"description": "Komunitas tech, programmer, dan penggemar teknologi.",
+			"banner": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&q=80"
+		},
+		{
+			"slug": "gaming",
+			"title": "Gaming",
+			"icon": "Gamepad2",
+			"count": "2.1 rb Komunitas",
+			"description": "Komunitas gamers, squad finding, tournament info, dan diskusi game.",
+			"banner": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600&q=80"
+		},
+		{
+			"slug": "kreatif",
+			"title": "Kreatif",
+			"icon": "Music",
+			"count": "890 Komunitas",
+			"description": "Komunitas musik, desain, seni, dan konten kreator.",
+			"banner": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&q=80"
+		},
+		{
+			"slug": "marketplace",
+			"title": "Marketplace",
+			"icon": "ShoppingBag",
+			"count": "1.5 rb Komunitas",
+			"description": "Komunitas jual beli, marketplace, dan promosi produk.",
+			"banner": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+		}
+	],
+	"communities": [
+		{
+			"id": "1",
+			"title": "Programmer Indonesia",
+			"description": "Komunitas programmer Indonesia. Sharing knowledge, job opportunities, dan project collaboration.",
+			"members": "28.5k",
+			"link": "https://chat.whatsapp.com/programmerindo",
+			"category": "teknologi",
+			"image": "/logo.svg",
+			"featured": true
+		},
+		{
+			"id": "2",
+			"title": "AI Enthusiast Indonesia",
+			"description": "Komunitas penggemar AI di Indonesia. Diskusi teknologi AI terbaru, tutorial, dan berita.",
+			"members": "15.2k",
+			"link": "https://chat.whatsapp.com/aiindonesia",
+			"category": "teknologi",
+			"image": "/waha.png",
+			"featured": true
+		},
+		{
+			"id": "3",
+			"title": "Belajar Programming Bersama",
+			"description": "Grup belajar programming dari dasar hingga mahir. Sharing tutorial, project, dan karir.",
+			"members": "25.3k",
+			"link": "https://chat.whatsapp.com/belajarcoding",
+			"category": "edukasi",
+			"image": "/logo.svg",
+			"featured": true
+		},
+		{
+			"id": "4",
+			"title": "Entrepreneur Muda Indonesia",
+			"description": "Komunitas pengusaha muda Indonesia. Sharing pengalaman bisnis, tips, dan networking.",
+			"members": "32.8k",
+			"link": "https://chat.whatsapp.com/entrepreneurmuda",
+			"category": "bisnis",
+			"image": "/waha.png",
+			"featured": true
+		},
+		{
+			"id": "5",
+			"title": "Crypto & Stock Traders ID",
+			"description": "Diskusi trading saham dan crypto. Signal, analisis pasar harian, dan edukasi investasi.",
+			"members": "45.2k",
+			"link": "https://chat.whatsapp.com/traderid",
+			"category": "bisnis",
+			"image": "/logo.svg",
+			"featured": true
+		},
+		{
+			"id": "6",
+			"title": "Gamers Indonesia Squad Finder",
+			"description": "Komunitas gamers Indonesia. Cari squad, tournament info, dan diskusi game favorit.",
+			"members": "52.3k",
+			"link": "https://chat.whatsapp.com/gamersindo",
+			"category": "gaming",
+			"image": "/waha.png",
+			"featured": true
+		},
+		{
+			"id": "7",
+			"title": "Desain Grafis Indonesia",
+			"description": "Komunitas desainer grafis. Portfolio review, tutorial, dan job opportunities.",
+			"members": "18.9k",
+			"link": "https://chat.whatsapp.com/desainindo",
+			"category": "kreatif",
+			"image": "/logo.svg",
+			"featured": false
+		},
+		{
+			"id": "8",
+			"title": "Music Producers Indonesia",
+			"description": "Komunitas music producers. Sharing tips production, collab project, dan gig info.",
+			"members": "9.8k",
+			"link": "https://chat.whatsapp.com/musicproducerid",
+			"category": "kreatif",
+			"image": "/waha.png",
+			"featured": false
+		},
+		{
+			"id": "9",
+			"title": "Math & Science Club",
+			"description": "Diskusi matematika dan sains. Olimpiade, bantu menjawab soal, dan fakta ilmiah.",
+			"members": "12.1k",
+			"link": "https://chat.whatsapp.com/mathscience",
+			"category": "edukasi",
+			"image": "/logo.svg",
+			"featured": false
+		},
+		{
+			"id": "10",
+			"title": "English Learning Community",
+			"description": "Grup belajar bahasa Inggris bersama. Praktik speaking, writing, dan conversation.",
+			"members": "18.5k",
+			"link": "https://chat.whatsapp.com/englishclub",
+			"category": "edukasi",
+			"image": "/waha.png",
+			"featured": false
+		},
+		{
+			"id": "11",
+			"title": "UMKM Indonesia",
+			"description": "Komunitas UMKM. Sharing tips mengembangkan bisnis kecil menengah dan promosi.",
+			"members": "28.9k",
+			"link": "https://chat.whatsapp.com/umkmindonesia",
+			"category": "bisnis",
+			"image": "/logo.svg",
+			"featured": false
+		},
+		{
+			"id": "12",
+			"title": "Mobile Legends Indonesia",
+			"description": "Cari squad MLBB. Rank dari Epic ke atas, tips & tricks, dan tournament info.",
+			"members": "48.3k",
+			"link": "https://chat.whatsapp.com/mlbbindo",
+			"category": "gaming",
+			"image": "/waha.png",
+			"featured": false
+		},
+		{
+			"id": "13",
+			"title": "Racing Games Indonesia",
+			"description": "Komunitas racing games. Drag race, tourney, dan car meet info.",
+			"members": "12.7k",
+			"link": "https://chat.whatsapp.com/racingindo",
+			"category": "gaming",
+			"image": "/logo.svg",
+			"featured": false
+		},
+		{
+			"id": "14",
+			"title": "Musisi Indonesia Jamming",
+			"description": "Komunitas musisi. Cari bandmate, jamming session, collab, dan gig info.",
+			"members": "22.1k",
+			"link": "https://chat.whatsapp.com/musisiindo",
+			"category": "kreatif",
+			"image": "/waha.png",
+			"featured": false
+		},
+		{
+			"id": "15",
+			"title": "Frontend Developer Indonesia",
+			"description": "Komunitas frontend developer. React, Vue, Angular, dan web technologies.",
+			"members": "14.2k",
+			"link": "https://chat.whatsapp.com/feindo",
+			"category": "teknologi",
+			"image": "/logo.svg",
+			"featured": false
+		},
+		{
+			"id": "16",
+			"title": "Fashion & Apparel Marketplace",
+			"description": "Jual beli fashion. Baju, sepatu, tas, dan aksesoris berkualitas.",
+			"members": "35.6k",
+			"link": "https://chat.whatsapp.com/fashionmarket",
+			"category": "marketplace",
+			"image": "/waha.png",
+			"featured": false
+		},
+		{
+			"id": "17",
+			"title": "Gadget & Elektronik",
+			"description": "Jual beli gadget dan elektronik. HP, laptop, gaming gear, dan lainnya.",
+			"members": "42.1k",
+			"link": "https://chat.whatsapp.com/gadgetmarket",
+			"category": "marketplace",
+			"image": "/logo.svg",
+			"featured": false
+		},
+		{
+			"id": "18",
+			"title": "Content Creator Indonesia",
+			"description": "Komunitas content creator. Tips grow channel, monetisasi, dan collab.",
+			"members": "19.5k",
+			"link": "https://chat.whatsapp.com/creatorindo",
+			"category": "kreatif",
+			"image": "/waha.png",
+			"featured": false
+		},
+		{
+			"id": "19",
+			"title": "Startup Indonesia",
+			"description": "Komunitas startup founder. Sharing pengalaman build startup, funding, dan scaling.",
+			"members": "11.8k",
+			"link": "https://chat.whatsapp.com/startupindo",
+			"category": "bisnis",
+			"image": "/logo.svg",
+			"featured": false
+		},
+		{
+			"id": "20",
+			"title": "Free Fire Indonesia",
+			"description": "Cari squad FF. Rank dari Master ke atas, tips & tricks, dan tournament.",
+			"members": "55.7k",
+			"link": "https://chat.whatsapp.com/ffindo",
+			"category": "gaming",
+			"image": "/waha.png",
+			"featured": false
+		}
+	]
+}

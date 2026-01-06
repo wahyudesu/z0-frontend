@@ -21,53 +21,27 @@ export type SimpleMenuItem = {
 
 export const dropdownMenus: DropdownMenuItem[] = [
 	{
-		trigger: "What's New",
+		trigger: "Blocks",
 		featured: {
-			title: "shadcn/ui",
-			description: "Beautifully designed components built with Tailwind CSS.",
+			title: "Z0 Blocks",
+			description: "Community resources and contributions.",
 			href: "/",
 		},
 		items: [
 			{
-				title: "Introduction",
-				href: "/docs",
-				description:
-					"Re-usable components built using Radix UI and Tailwind CSS.",
+				title: "Feedback",
+				href: "/feedback",
+				description: "Share your thoughts and help us improve.",
 			},
 			{
-				title: "Installation",
-				href: "/docs/installation",
-				description: "How to install dependencies and structure your app.",
+				title: "Roadmap",
+				href: "/roadmap",
+				description: "See what's coming next and our future plans.",
 			},
 			{
-				title: "Typography",
-				href: "/docs/primitives/typography",
-				description: "Styles for headings, paragraphs, lists...etc",
-			},
-		],
-	},
-	{
-		trigger: "Features",
-		featured: {
-			title: "Z0 Features",
-			description: "Powerful features for modern web development.",
-			href: "/features",
-		},
-		items: [
-			{
-				title: "Fast Performance",
-				href: "/features/performance",
-				description: "Lightning-fast loading and execution.",
-			},
-			{
-				title: "Easy Integration",
-				href: "/features/integration",
-				description: "Seamlessly integrate with existing systems.",
-			},
-			{
-				title: "Developer Friendly",
-				href: "/features/developer",
-				description: "Built with developers in mind.",
+				title: "Request Feature",
+				href: "/request-feature",
+				description: "Suggest new features or improvements.",
 			},
 		],
 	},
