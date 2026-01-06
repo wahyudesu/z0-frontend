@@ -1,5 +1,3 @@
-"use client";
-
 import {
 	BookOpen,
 	Briefcase,
@@ -104,6 +102,15 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 	ShoppingBag,
 };
 
+const categoryColors: Record<string, { bg: string; text: string; hover: string }> = {
+	edukasi: { bg: "bg-blue-100", text: "text-blue-600", hover: "group-hover:text-blue-600" },
+	bisnis: { bg: "bg-amber-100", text: "text-amber-600", hover: "group-hover:text-amber-600" },
+	teknologi: { bg: "bg-purple-100", text: "text-purple-600", hover: "group-hover:text-purple-600" },
+	gaming: { bg: "bg-green-100", text: "text-green-600", hover: "group-hover:text-green-600" },
+	kreatif: { bg: "bg-pink-100", text: "text-pink-600", hover: "group-hover:text-pink-600" },
+	marketplace: { bg: "bg-orange-100", text: "text-orange-600", hover: "group-hover:text-orange-600" },
+};
+
 const data = communityData as CommunityData;
 const categories: CategoryItem[] = data.categories;
 
@@ -173,17 +180,22 @@ export default function CommunityPage() {
 				<div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 					{categories.map((cat) => {
 						const Icon = iconMap[cat.icon];
+						const colors = categoryColors[cat.slug] || {
+							bg: "bg-slate-100",
+							text: "text-slate-600",
+							hover: "group-hover:text-slate-600"
+						};
 						return (
 							<Link
 								key={cat.slug}
 								href={`/community/${cat.slug}`}
 								className="group flex items-center gap-4 rounded-2xl bg-slate-50 p-5 transition-all duration-300 hover:shadow-lg hover:bg-white"
 							>
-								<div className="flex h-12 w-12 items-center justify-center rounded-full bg-rose-100 text-rose-600 group-hover:scale-110 transition-transform">
+								<div className={`flex h-12 w-12 items-center justify-center rounded-full ${colors.bg} ${colors.text} group-hover:scale-110 transition-transform`}>
 									<Icon className="h-6 w-6" />
 								</div>
 								<div className="flex-1">
-									<h3 className="font-semibold group-hover:text-rose-600 transition-colors">
+									<h3 className={`font-semibold ${colors.hover} transition-colors`}>
 										{cat.title}
 									</h3>
 									<p className="text-sm text-muted-foreground">

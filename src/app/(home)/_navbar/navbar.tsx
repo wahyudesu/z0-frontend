@@ -132,7 +132,7 @@ export default function Navbar({ className }: { className?: string }) {
               <div className="submenu-preview">
                 <div className="flex h-full w-full items-start justify-center p-1">
                   <div className="space-y-1 text-center">
-                    <h4 className="text-xl font-bold">Everything you need.</h4>
+                    <h4 className="text-xl font-bold">Everything you need</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed max-w-50">
                       Less is more. We've built a beautiful minimal app, that's packed with just the right amount of features, to save you time and help you focus.
                     </p>
@@ -185,7 +185,7 @@ export default function Navbar({ className }: { className?: string }) {
               <div className="submenu-preview">
                 <div className="flex h-full w-full items-start justify-center p-1">
                   <div className="space-y-1 text-center">
-                    <h4 className="text-xl font-bold">Masukanmu berarti.</h4>
+                    <h4 className="text-xl font-bold">Masukanmu berarti</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed max-w-50">
                       Hubungi kami untuk memberi masukan atau lihat roadmap pengembangan chatbot ini.
                       </p>
